@@ -24,8 +24,8 @@ var Wins = 0;
 var Losses = 0;
 var TotalScore = 0;
 
-
-
+$(".wins").html(Wins);
+$(".losses").html(Losses);
 
 $(".redGem").on("click", function() {
   TotalScore = TotalScore + redGemNumber;
