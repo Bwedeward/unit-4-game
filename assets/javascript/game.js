@@ -80,12 +80,14 @@ $(".purpleGem").on("click", function() {
   });
 
 function winner(){
+    console.log("Winner winner chicken dinner")
     Wins++;
     $(".wins").html(Wins);
     reset();
 }
 
 function loser(){
+    console.log("Loser loser burnt dinner")
     Losses++;
     $(".losses").html(Losses);
     reset();
