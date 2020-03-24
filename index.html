@@ -6,29 +6,56 @@
     <title>Document</title>
     <link rel="stylesheet" src="assets/css/reset.css" />
     <link rel="stylesheet" src="assets/css/style.css" />
-    <link rel="stylesheet" src="assets/javascript/game.js" />
     <link rel="stylesheet" src="assets/images" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   </head>
   <body>
     <h1 class="title">Crystal Collector!</h1>
     <div class="directions">
       <p>You will be given a random number at the start of the game.</p>
-      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points ot your total score.</p>
-      <p>You win the game by matching your total score to the random number, you lose the game if you total score goes above the random number.</p>
+      <p>
+        There are four crystals below. By clicking on a crystal you will add a
+        specific amount of points ot your total score.
+      </p>
+      <p>
+        You win the game by matching your total score to the random number, you
+        lose the game if you total score goes above the random number.
+      </p>
       <p>The value of each crystal is hidden from you until you click on it.</p>
-      <p>Each time when the game starts, the game will change the values of each crystal.</p>
+      <p>
+        Each time when the game starts, the game will change the values of each
+        crystal.
+      </p>
     </div>
-    <div class="randomNumber"></div>
-    <div>
-      <span class="redGem"></span>
-      <span class="purpleGem"></span>
-      <span class="pinkGem"></span>
-      <span class="orangeGem"></span>
+    <div class="randomNumber">Goal: </div>
+    <div class="gems">
+      <img src="assets/images/RedGem.jpg" class="redGem" alt="Red Gem" />
+      <img
+        src="assets/images/PurpleGem.jpg"
+        class="purpleGem"
+        alt="Purple Gem"
+      />
+      <img
+        src="assets/images/Pink Gem.jpg"
+        class="pinkGem"
+        alt="Pink Gem"
+      />
+      <img
+        src="assets/images/OrangeGem.jpg"
+        class="orangeGem"
+        alt="Orange Gem"
+      />
     </div>
-    <div class="totalScore">Your total score is:</div>
-    <div>
-      <span class="wins">Wins:</span>
-      <span class="losses">Losses:</span>
+    <div>Your total score is:
+      <span class="yourTotalScore"></span>
     </div>
+    <div class="scores">
+      <p>Wins:</p>
+      <span class="wins"></span>
+      <p>Losses:</p>
+      <span class="losses"></span>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
   </body>
 </html>
